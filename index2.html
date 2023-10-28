@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Local Government Results</title>
+</head>
+
+<body>
+    <h1>Summed Total Results for Local Government</h1>
+    <table border="1">
+        <tr>
+            <th>Party Abbreviation</th>
+            <th>Total Score</th>
+        </tr>
+        {% for party, total_score in results.items() %}
+        <tr>
+            <td>{{ party }}</td>
+            <td>{{ total_score }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>

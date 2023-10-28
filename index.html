@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Polling Unit Results</title>
+</head>
+
+<body>
+    <h1>Polling Unit Results</h1>
+    <table border="1">
+        <tr>
+            <th>Result ID</th>
+            <th>Polling Unit Unique ID</th>
+            <th>Party Abbreviation</th>
+            <th>Party Score</th>
+            <th>Entered By User</th>
+            <th>Date Entered</th>
+            <th>User IP Address</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+            <td>{{ result[2] }}</td>
+            <td>{{ result[3] }}</td>
+            <td>{{ result[4] }}</td>
+            <td>{{ result[5] }}</td>
+            <td>{{ result[6] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
